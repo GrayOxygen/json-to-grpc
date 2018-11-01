@@ -1,7 +1,6 @@
-# json-go-struct
-convert json to go struct(one nest struct and multi normal separate structs),you can check my another project https://github.com/GrayOxygen/json-go-struct-app/ just a app version of this project
->
+# json-go-grpc
 1. 将json转为grpc的定义，目前只实现json转为message的定义
+2. 该项目基于我的另一个项目 https://github.com/GrayOxygen/json-go-struct 
 TODO 后续考虑如何生成完整的grpc(方法的定义等)
 
 ## Example
@@ -102,7 +101,7 @@ input
 }
 ```
 output
-## Multi Separate Struct
+## GRPC Message
 ``` 
 syntax = "proto3";
 package protobuf;
