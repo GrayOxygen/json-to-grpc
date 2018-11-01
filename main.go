@@ -39,7 +39,7 @@ func test_json_to_struct() {
 func test_json_to_proto() {
 	//读取json文件	START
 	fmt.Println(util.GetCurPath())
-	bytes, err := ioutil.ReadFile("./testjson/test2.json")
+	bytes, err := ioutil.ReadFile("./testjson/test3.json")
 
 	jsonStr := string(bytes)
 	////读取json文件  END

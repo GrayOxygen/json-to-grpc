@@ -60,17 +60,16 @@ func JSON2Proto(jsonStr string) (string, error) {
 	format_res_scanner := strings.Split(res, "\n") //下标0是第一行，1是第二行...
 	for index := lineCount - 1; index < len(format_res_scanner); index++ {
 		temp_line := ""
-		if !strings.Contains(format_res_scanner[index], "message") && !strings.Contains(format_res_scanner[index], "}") {
+
+		if strings.Contains(format_res_scanner[index], "message") && strings.Contains(format_res_scanner[index], "{") {
+			temp_line = format_res_scanner[index]
+			temp_line = strings.Replace(temp_line, "\t", "", -1)
+		} else if !strings.Contains(format_res_scanner[index], "}") {
 			//缩进保持一致
 			format_res_scanner[index] = strings.TrimLeft(format_res_scanner[index], " ")
 			format_res_scanner[index] = strings.TrimLeft(format_res_scanner[index], "\t")
 			temp_line = "	" + strings.TrimLeft(format_res_scanner[index], " ")
-		}
-		if strings.Contains(format_res_scanner[index], "message") {
-			temp_line = format_res_scanner[index]
-			temp_line = strings.Replace(temp_line, "\t", "", -1)
-		}
-		if strings.Contains(format_res_scanner[index], "}") {
+		} else if strings.Contains(format_res_scanner[index], "}") {
 			temp_line = format_res_scanner[index]
 		}
 
@@ -78,10 +77,11 @@ func JSON2Proto(jsonStr string) (string, error) {
 	}
 
 	//加上proto定义
-	format_res =`syntax = "proto3";
+	format_res = `syntax = "proto3";
 package protobuf;
 
-`+format_res
+` + format_res
+	fmt.Println(format_res)
 
 	return format_res, nil
 
