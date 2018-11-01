@@ -2,7 +2,7 @@ package util
 
 import (
 	"fmt"
-	"github.com/GrayOxygen/json-go-struct/tree"
+	"github.com/GrayOxygen/json-to-grpc/tree"
 	"reflect"
 )
 

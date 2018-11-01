@@ -1,10 +1,10 @@
 package apis
 
 import (
-	"github.com/GrayOxygen/json-go-struct/errors"
-	"github.com/GrayOxygen/json-go-struct/parser"
-	"github.com/GrayOxygen/json-go-struct/tree"
-	"github.com/GrayOxygen/json-go-struct/util"
+	"github.com/GrayOxygen/json-to-grpc/errors"
+	"github.com/GrayOxygen/json-to-grpc/parser"
+	"github.com/GrayOxygen/json-to-grpc/tree"
+	"github.com/GrayOxygen/json-to-grpc/util"
 	"github.com/golang-collections/collections/stack"
 	"strings"
 

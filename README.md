@@ -1,6 +1,6 @@
 # json-go-grpc
 1. 将json转为grpc的定义，目前只实现json转为message的定义
-2. 该项目基于我的另一个项目 https://github.com/GrayOxygen/json-go-struct 
+2. 该项目基于我的另一个项目 https://github.com/GrayOxygen/json-to-grpc
 </b>
 TODO 后续考虑如何生成完整的grpc(方法的定义等)
 

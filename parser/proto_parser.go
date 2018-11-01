@@ -2,9 +2,9 @@ package parser
 
 import (
 	"fmt"
-	"github.com/GrayOxygen/json-go-struct/enums"
-	"github.com/GrayOxygen/json-go-struct/tree"
-	"github.com/GrayOxygen/json-go-struct/util"
+	"github.com/GrayOxygen/json-to-grpc/enums"
+	"github.com/GrayOxygen/json-to-grpc/tree"
+	"github.com/GrayOxygen/json-to-grpc/util"
 	"os"
 	"strconv"
 	"strings"

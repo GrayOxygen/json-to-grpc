@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/GrayOxygen/json-go-struct/apis"
-	"github.com/GrayOxygen/json-go-struct/util"
+	"github.com/GrayOxygen/json-to-grpc/apis"
+	"github.com/GrayOxygen/json-to-grpc/util"
 	_ "github.com/robertkrimen/otto/underscore"
 	"io/ioutil"
 	"os"

@@ -1,11 +1,11 @@
 package parser
 
 import (
-	"github.com/GrayOxygen/json-go-struct/consts"
-	"github.com/GrayOxygen/json-go-struct/enums"
-	"github.com/GrayOxygen/json-go-struct/model"
-	"github.com/GrayOxygen/json-go-struct/tree"
-	"github.com/GrayOxygen/json-go-struct/util"
+	"github.com/GrayOxygen/json-to-grpc/consts"
+	"github.com/GrayOxygen/json-to-grpc/enums"
+	"github.com/GrayOxygen/json-to-grpc/model"
+	"github.com/GrayOxygen/json-to-grpc/tree"
+	"github.com/GrayOxygen/json-to-grpc/util"
 	"github.com/golang-collections/collections/stack"
 	"github.com/robertkrimen/otto"
 	"strings"

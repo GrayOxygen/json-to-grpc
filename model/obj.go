@@ -1,6 +1,6 @@
 package model
 
-import "github.com/GrayOxygen/json-go-struct/enums"
+import "github.com/GrayOxygen/json-to-grpc/enums"
 
 type StructObj struct {
 	Id         string

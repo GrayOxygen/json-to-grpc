@@ -1,7 +1,7 @@
 package tree
 
 
-import "github.com/GrayOxygen/json-go-struct/model"
+import "github.com/GrayOxygen/json-to-grpc/model"
 
 
 type TreeNode struct {
